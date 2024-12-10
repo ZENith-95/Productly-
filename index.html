@@ -16,10 +16,14 @@
     <header class="header">
       <div class="header-logo">
         <div class="logo">
-          <a href="#"><img src="./Assets/logo.svg" alt="" /></a>
+          <a href="#"><img src="./Assets/logo.svg" alt="Company Logo" /></a>
         </div>
       </div>
+
       <div class="nav">
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
         <div class="nav-list">
           <a href="#product">Product</a>
           <a href="#customers">Customers</a>
@@ -32,6 +36,18 @@
         </div>
       </div>
     </header>
+
+    <div class="drop-down" id="dropdownMenu">
+      <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+      <a href="#product">Product</a>
+      <a href="#customers">Customers</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#resources">Resources</a>
+      <div class="sign">
+        <button class="sign-in">Sign In</button>
+        <button class="sign-up">Sign Up</button>
+      </div>
+    </div>
 
     <!-- HEADER SECTION ENDS  -->
     <div class="main">
@@ -234,42 +250,45 @@
       </section>
       <!-- RESOURCES SECTION ENDS HERE -->
 
-      <section class="footer">
+      <section class="footer" id="footer">
         <hr />
         <div class="footer-top">
           <div class="logo"><img src="./Assets/logo.svg" alt="" /></div>
-          <div class="footer-list">
-            <p>Quick links</p>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
+          <div class="infolinks">
+            <div class="footer-list">
+              <p>Quick links</p>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-list">
+              <p>Legal Stuff</p>
+              <ul>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Financing</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="footer-list">
-            <p>Legal Stuff</p>
-            <ul>
-              <li><a href="#">Disclaimer</a></li>
-              <li><a href="#">Financing</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div class="footer-list">
+          <div class="footer-list form">
             <h3>knowing you're always on the best energy deal.</h3>
-            <input type="number" /> <br />
+            <input type="number" placeholder="Enter your number" /> <br />
             <button class="sign-up">Sign Up Now</button>
           </div>
         </div>
         <hr />
         <div class="footer-bottom">
-          <p>c 2022 ZENith LLC Inc.</p>
+          <p>&copy 2022 ZENith LLC Inc.</p>
           <p>
             Made with
             <span class="lang1"><i class="fa-brands fa-html5"></i> </span>
             <span class="lang2"><i class="fa-brands fa-css3-alt"></i></span> and
-            <span class="lang3"><i class="fa-brands fa-js"></i></span> by ZENith
+            <span class="lang3"><i class="fa-brands fa-js"></i></span> by
+            <a href="https://github.com/ZENith-95">ZENith</a>
             <i class=""></i>
           </p>
         </div>
