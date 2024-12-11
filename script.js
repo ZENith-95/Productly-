@@ -40,3 +40,26 @@ function outsideClickHandler(event) {
 document.querySelectorAll(".drop-down a").forEach((option) => {
   option.addEventListener("click", hideMenu);
 });
+
+
+// Get elements
+const watchVideoBtn = document.getElementById("watchVideoBtn");
+const videoModal = document.getElementById("videoModal");
+const closeVideoModal = document.getElementById("closeVideoModal");
+
+// Show the modal when the "Watch the video" button is clicked
+watchVideoBtn.addEventListener("click", () => {
+  videoModal.style.display = "flex"; 
+});
+
+// Hide the modal when the close button is clicked
+closeVideoModal.addEventListener("click", () => {
+  videoModal.style.display = "none";
+});
+
+// Hide the modal when clicking outside the video
+videoModal.addEventListener("click", (event) => {
+  if (event.target === videoModal) {
+    videoModal.style.display = "none"; 
+  }
+});
