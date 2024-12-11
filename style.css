@@ -1107,14 +1107,6 @@ section {
     text-align: center;
   }
 
-    .product .product-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    padding-left: 6rem;
-    gap: 1rem;
-  }
 
   .logo{
     width: 9.5rem;
